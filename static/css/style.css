@@ -1,0 +1,113 @@
+/* A modern, clean look for the whole page */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Center the main content */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #B33791;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.input-group {
+    margin-bottom: 20px; /* Adds space between the input groups */
+}
+
+.label-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.label-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    color: #555; 
+}
+
+label {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Style the text areas */
+textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 16px;
+    box-sizing: border-box; /* Important for padding and width to work together */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+textarea:focus {
+    outline: none;
+    border-color: #DB8DD0;
+    box-shadow: 0 0 5px rgba(179, 55, 145);
+}
+/* Description paragraph */
+.description {
+    text-align: center;
+    color: #555;
+    font-size: 16px;
+    margin-top: -15px; /* Pulls it closer to the heading */
+    margin-bottom: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5;
+}
+
+
+/* Style the button */
+button {
+    display: block;
+    width: 100%;
+    padding: 12px 24px;
+    border: 1px solid #2980b9; /* A slightly darker border to match the gradient */
+    
+    /* --- Gradient Background --- */
+    background-image: linear-gradient(to right, #B33791, #DB8DD0);
+    
+    color: #ffffff; /* White text looks best on a gradient */
+    font-size: 20px;
+    font-weight: 1000;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* This creates a smooth effect for the background change on hover */
+    background-size: 200% auto;
+    transition: all 0.4s ease-in-out; 
+}
+
+button:hover {
+    background-position: right center;
+}
+
+/* Style the result area */
+#result {
+    display: none;
+    margin-top: 30px;
+    padding: 20px;
+    background: #ecf0f1;
+    border-left: 5px solid #B33791;
+}
+
+#result h3 {
+    margin-top: 0;
+}
