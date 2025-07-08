@@ -138,7 +138,8 @@ def check_consistency(document: str, summary: str) -> dict:
     """
     Function to check the consistency of a summary with a document.
     """
-    client = OpenAI(api_key="sk-62d5e4cd33674b4aa3f54c320f254169", base_url="https://api.deepseek.com")
+    api_key = os.getenv("DEEPSEEK_API_KEY")
+    client = OpenAI(api_key=api_key, base_url="https://api.deepseek.com")
     messages = [
        {"role": "system", "content": "You are a helpful assistant"},
           {"role": "user", "content": f"""Decide if the following summary is consistent with the corresponding article. 
