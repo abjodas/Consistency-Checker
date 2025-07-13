@@ -111,3 +111,39 @@ button:hover {
 #result h3 {
     margin-top: 0;
 }
+
+.navbar {
+    background-color: #ffffff;
+    padding: 0 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #DB8DD0;
+}
+
+.nav-link.active {
+    color: #B33791;
+    border-bottom: 3px solid #B33791;
+}
+
+/* Style for the "Add Summary" button */
+#add-summary-btn {
+    background: #7f8c8d; /* A neutral color */
+    margin-bottom: 10px;
+}
+#add-summary-btn:hover {
+    background: #95a5a6;
+}
